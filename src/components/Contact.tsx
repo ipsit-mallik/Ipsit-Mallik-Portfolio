@@ -30,7 +30,7 @@ const Contact = () => {
                             </a>
                             <a href="https://linkedin.com/in/ipsit-mallik-b46390219" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
                                 <Linkedin className="text-primary"/>
-                                <span className="text-muted-foreground group-hover:text-primary transition-colors">linkedin.com/in/ipsit-mallik...</span>
+                                <span className="text-muted-foreground group-hover:text-primary transition-colors">LinkedIn Profile</span>
                             </a>
                             <div className="flex items-center gap-3">
                                 <MapPin className="text-primary"/>
