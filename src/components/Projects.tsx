@@ -8,7 +8,7 @@ const projectsData = [
   {
     title: "Intrusion Detection System for Connected Vehicles",
     description: "An ML-based system to detect anomalies and potential intrusions in smart city vehicle networks.",
-    tech: ["Python", "Machine Learning", "Scikit-learn"],
+    tech: ["Python", "Machine Learning"],
     role: "Developed and trained machine learning models for anomaly detection, achieving high accuracy in identifying potential threats in simulated vehicle-to-infrastructure communication data."
   },
   {
