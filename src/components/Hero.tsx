@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
 
@@ -7,10 +8,12 @@ const Hero = () => {
       {/* Background */}
       <div aria-hidden="true" className="absolute inset-0 -z-10">
         <div
-          className="absolute inset-0 animate-background-pan"
+          className="absolute inset-0"
           style={{
-            backgroundImage: "linear-gradient(45deg, hsl(var(--background)), hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--background)))",
-            backgroundSize: "400% 400%",
+            backgroundImage: "url('https://i.postimg.cc/7LmGS8Tn/simple-blue-gray-blank-wallpaper-preview.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         />
       </div>
