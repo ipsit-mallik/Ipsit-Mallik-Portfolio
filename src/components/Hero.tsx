@@ -7,9 +7,10 @@ const Hero = () => {
       <div aria-hidden="true" className="absolute inset-0 -z-10">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://i.postimg.cc/7LmGS8Tn/simple-blue-gray-blank-wallpaper-preview.jpg')" }}
+          style={{
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/7LmGS8Tn/simple-blue-gray-blank-wallpaper-preview.jpg')"
+          }}
         />
-        <div className="absolute inset-0 bg-black/70" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6">
