@@ -1,15 +1,16 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
+
 const Hero = () => {
-  return <section id="home" className="section relative overflow-hidden flex items-center">
+  return (
+    <section id="home" className="section relative overflow-hidden flex items-center">
       {/* Background */}
       <div aria-hidden="true" className="absolute inset-0 -z-10">
         <div
           className="absolute inset-0 animate-background-pan"
           style={{
-            backgroundImage: "linear-gradient(to right, hsl(var(--background)), hsl(var(--secondary)), hsl(var(--background)))",
-            backgroundSize: "200% 200%",
+            backgroundImage: "linear-gradient(45deg, hsl(var(--background)), hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--background)))",
+            backgroundSize: "400% 400%",
           }}
         />
       </div>
@@ -54,6 +55,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
