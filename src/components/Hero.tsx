@@ -6,17 +6,16 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="section relative overflow-hidden flex items-center bg-background"
+      className="section relative overflow-hidden flex items-center"
+      style={{
+        backgroundImage: `url('https://i.postimg.cc/brTDMBTY/istockphoto-1278802737-612x612.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
-      {/* Decorative gradient overlay with white and grey tones */}
+      {/* Dark overlay for better text readability */}
       <div
-        className="absolute inset-0 opacity-10"
-        style={{
-          background: `
-            radial-gradient(at 20% 80%, white, transparent 70%),
-            radial-gradient(at 80% 20%, hsl(0 0% 60%), transparent 70%)
-          `,
-        }}
+        className="absolute inset-0 bg-black/60"
         aria-hidden="true"
       />
 
@@ -24,12 +23,12 @@ const Hero = () => {
         <div className="grid gap-8 lg:grid-cols-5 lg:gap-12 xl:gap-16 items-center">
           <div className="space-y-6 text-center lg:text-left lg:col-span-3">
             <div>
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-7xl/none">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-7xl/none text-white">
                 Ipsit Mallik
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground font-semibold mt-4">Software Engineer – Backend Developer</p>
+              <p className="text-xl md:text-2xl text-gray-300 font-semibold mt-4">Software Engineer – Backend Developer</p>
             </div>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl mx-auto lg:mx-0 text-left">
+            <p className="max-w-[600px] text-gray-300 md:text-xl mx-auto lg:mx-0 text-left">
               Building scalable and reliable backend systems with a passion for problem-solving, quick adaptability, and collaborative learning. Specializing in Java, Node.js, and Spring Boot.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row justify-center lg:justify-start">
