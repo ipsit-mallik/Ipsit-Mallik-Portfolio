@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
 
@@ -19,7 +18,7 @@ const Hero = () => {
         <div className="grid gap-8 lg:grid-cols-5 lg:gap-12 xl:gap-16 items-center">
           <div className="space-y-6 text-center lg:text-left lg:col-span-3">
             <div className="animate-fade-in-up">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-7xl/none bg-clip-text text-transparent animate-background-pan bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_auto]">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-7xl/none bg-clip-text text-transparent bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_auto]">
                 Ipsit Mallik
               </h1>
               <p className="text-xl md:text-2xl text-primary font-semibold mt-4">Software Engineer – Backend Developer</p>
@@ -50,7 +49,7 @@ const Hero = () => {
           animationDelay: '0.3s'
         }}>
             <div className="relative">
-              <img src="https://i.postimg.cc/43TsnH0D/Profile-photo.jpg" alt="Ipsit Mallik" className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-pulse-shadow" />
+              <img src="https://i.postimg.cc/43TsnH0D/Profile-photo.jpg" alt="Ipsit Mallik" className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96" />
             </div>
           </div>
         </div>
