@@ -1,21 +1,21 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
     <section id="home" className="section relative overflow-hidden flex items-center">
-      {/* Subtle background gradient */}
+      {/* Background Image */}
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10"
       >
-        <div className="absolute inset-0 bg-background" />
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-card/20"
+        <img
+          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1920&q=80"
+          alt="Hero background"
+          className="w-full h-full object-cover"
         />
-        <div
-            className="absolute -top-1/2 left-1/2 -z-10 h-[150%] w-[150%] -translate-x-1/2 rounded-full bg-primary/10 opacity-20 blur-3xl"
-        />
+        <div className="absolute inset-0 bg-background/70 backdrop-blur-sm" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6">
@@ -46,14 +46,14 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex justify-center lg:col-span-2 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <div className="relative group [perspective:1000px]">
+            <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
                 alt="Ipsit Mallik"
-                className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-2xl shadow-primary/10 transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(15deg)] filter drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]"
+                className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-2xl shadow-primary/10 filter drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]"
               />
-              <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-primary/20 animate-pulse transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-primary/30 animate-pulse transition-transform duration-700 group-hover:scale-105" style={{animationDelay: '0.5s'}} />
+              <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-primary/20 animate-pulse" />
+              <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-primary/30 animate-pulse" style={{animationDelay: '0.5s'}} />
             </div>
           </div>
         </div>
