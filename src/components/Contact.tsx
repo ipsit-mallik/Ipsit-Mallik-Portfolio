@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 mb-8 text-center">{children}</h2>
@@ -32,6 +32,10 @@ const Contact = () => {
                                 <Linkedin className="text-primary"/>
                                 <span className="text-muted-foreground group-hover:text-primary transition-colors">linkedin.com/in/ipsit-mallik...</span>
                             </a>
+                            <div className="flex items-center gap-3">
+                                <MapPin className="text-primary"/>
+                                <span className="text-muted-foreground">Mundamarai, Odisha, India - 761114</span>
+                            </div>
                         </div>
                     </div>
                     <div className="lg:col-span-3">
