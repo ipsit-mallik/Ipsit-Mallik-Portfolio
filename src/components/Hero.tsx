@@ -5,7 +5,11 @@ const Hero = () => {
   return <section id="home" className="section relative overflow-hidden flex items-center">
       {/* Background */}
       <div aria-hidden="true" className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary to-background bg-[length:200%_200%] animate-background-pan" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/lovable-uploads/aa45e437-bc1b-4b25-96cf-4d29e9ba96f9.png')" }}
+        />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6">
