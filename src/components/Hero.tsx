@@ -6,14 +6,19 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="section relative overflow-hidden flex items-center bg-center bg-cover"
-      style={{
-        backgroundImage:
-          "url('https://i.postimg.cc/RZw9ZBcF/artistic-vector-gradient-texture-background-websites-901408-14679.avif')",
-      }}
+      className="section relative overflow-hidden flex items-center bg-background"
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-background/40" aria-hidden="true" />
+      {/* Decorative gradient overlay inspired by the reference image */}
+      <div
+        className="absolute inset-0 opacity-20"
+        style={{
+          background: `
+            radial-gradient(at 20% 80%, hsl(var(--primary)), transparent 50%),
+            radial-gradient(at 80% 20%, hsl(var(--secondary)), transparent 50%)
+          `,
+        }}
+        aria-hidden="true"
+      />
 
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="grid gap-8 lg:grid-cols-5 lg:gap-12 xl:gap-16 items-center">
