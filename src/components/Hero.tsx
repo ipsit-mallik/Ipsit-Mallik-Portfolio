@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
           <div className="flex justify-center lg:col-span-2">
             <div className="relative">
-              <img src="https://i.postimg.cc/43TsnH0D/Profile-photo.jpg" alt="Ipsit Mallik" className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96" />
+              <img src="https://i.postimg.cc/43TsnH0D/Profile-photo.jpg" alt="Ipsit Mallik" className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-[0_0_25px_hsl(var(--primary)/0.3)]" />
             </div>
           </div>
         </div>
