@@ -3,24 +3,19 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
 
 const Hero = () => {
-  console.log("Hero component rendering with background:", "https://i.postimg.cc/7LmGS8Tn/simple-blue-gray-blank-wallpaper-preview.jpg");
-  
   return (
-    <section id="home" className="section relative overflow-hidden flex items-center">
-      {/* Background */}
-      <div aria-hidden="true" className="absolute inset-0 -z-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('https://i.postimg.cc/7LmGS8Tn/simple-blue-gray-blank-wallpaper-preview.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-      </div>
+    <section
+      id="home"
+      className="section relative overflow-hidden flex items-center bg-center bg-cover"
+      style={{
+        backgroundImage:
+          "url('https://i.postimg.cc/7LmGS8Tn/simple-blue-gray-blank-wallpaper-preview.jpg')",
+      }}
+    >
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-background/70" aria-hidden="true" />
 
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="grid gap-8 lg:grid-cols-5 lg:gap-12 xl:gap-16 items-center">
           <div className="space-y-6 text-center lg:text-left lg:col-span-3">
             <div className="animate-fade-in-up">
