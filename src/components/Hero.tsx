@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
 
 const Hero = () => {
+  console.log("Hero component rendering with background:", "https://i.postimg.cc/7LmGS8Tn/simple-blue-gray-blank-wallpaper-preview.jpg");
+  
   return (
     <section id="home" className="section relative overflow-hidden flex items-center">
       {/* Background */}
