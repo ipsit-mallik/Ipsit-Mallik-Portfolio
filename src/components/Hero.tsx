@@ -26,7 +26,7 @@ const Hero = () => {
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-7xl/none text-white">
                 Ipsit Mallik
               </h1>
-              <p className="text-xl md:text-2xl text-gray-300 font-semibold mt-4">Software Engineer – Backend Developer</p>
+              <p className="text-xl md:text-2xl text-primary font-semibold mt-4">Software Engineer – Backend Developer</p>
             </div>
             <p className="max-w-[600px] text-gray-300 md:text-xl mx-auto lg:mx-0 text-left">
               Building scalable and reliable backend systems with a passion for problem-solving, quick adaptability, and collaborative learning. Specializing in Java, Node.js, and Spring Boot.
