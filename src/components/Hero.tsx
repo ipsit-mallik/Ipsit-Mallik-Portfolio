@@ -7,7 +7,7 @@ const Hero = () => {
       <div aria-hidden="true" className="absolute inset-0 -z-10">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/lovable-uploads/aa45e437-bc1b-4b25-96cf-4d29e9ba96f9.png')" }}
+          style={{ backgroundImage: "url('https://i.postimg.cc/7LmGS8Tn/simple-blue-gray-blank-wallpaper-preview.jpg')" }}
         />
         <div className="absolute inset-0 bg-black/70" />
       </div>
