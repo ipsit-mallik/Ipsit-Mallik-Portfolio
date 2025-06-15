@@ -1,19 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section id="home" className="section relative overflow-hidden flex items-center">
+  return <section id="home" className="section relative overflow-hidden flex items-center">
       {/* Background Image */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 -z-10"
-      >
-        <img
-          src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1920&q=80"
-          alt="Hero background"
-          className="w-full h-full object-cover"
-        />
+      <div aria-hidden="true" className="absolute inset-0 -z-10">
+        <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1920&q=80" alt="Hero background" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
@@ -26,10 +17,14 @@ const Hero = () => {
               </h1>
               <p className="text-xl md:text-2xl text-primary font-semibold mt-4">Software Engineer – Backend Developer</p>
             </div>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl mx-auto lg:mx-0 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <p style={{
+            animationDelay: '0.2s'
+          }} className="max-w-[600px] text-muted-foreground md:text-xl mx-auto lg:mx-0 animate-fade-in-up text-left">
               Building scalable and reliable backend systems with a passion for problem-solving, quick adaptability, and collaborative learning. Specializing in Java, Node.js, and Spring Boot.
             </p>
-            <div className="flex flex-col gap-4 sm:flex-row justify-center lg:justify-start animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col gap-4 sm:flex-row justify-center lg:justify-start animate-fade-in-up" style={{
+            animationDelay: '0.4s'
+          }}>
               <a href="#projects">
                 <Button size="lg" className="w-full sm:w-auto">
                   View My Work
@@ -44,19 +39,15 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="flex justify-center lg:col-span-2 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <div className="flex justify-center lg:col-span-2 animate-fade-in-up" style={{
+          animationDelay: '0.3s'
+        }}>
             <div className="relative">
-              <img
-                src="https://i.postimg.cc/43TsnH0D/Profile-photo.jpg"
-                alt="Ipsit Mallik"
-                className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-2xl"
-              />
+              <img src="https://i.postimg.cc/43TsnH0D/Profile-photo.jpg" alt="Ipsit Mallik" className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-2xl" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
