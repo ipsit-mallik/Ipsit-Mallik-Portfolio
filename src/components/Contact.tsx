@@ -1,15 +1,65 @@
 
+import { useState, useRef, FormEvent } from "react";
+import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { toast } from "@/hooks/use-toast";
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 mb-8 text-center">{children}</h2>
 );
 
 const Contact = () => {
+    const form = useRef<HTMLFormElement>(null);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+
+    const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (!name.trim() || !email.trim() || !message.trim()) {
+            toast({
+                title: "Incomplete Form",
+                description: "Please fill out all fields before sending.",
+                variant: "destructive",
+            });
+            return;
+        }
+
+        if (!form.current) return;
+
+        setIsLoading(true);
+
+        emailjs.sendForm('service_fuj4sco', 'template_6p1mery', form.current, 'zQUk0Zj0bPCT9c9T6')
+            .then(
+                () => {
+                    toast({
+                        title: "Message Sent!",
+                        description: "Thank you for reaching out. I'll get back to you soon.",
+                    });
+                    setName('');
+                    setEmail('');
+                    setMessage('');
+                },
+                (error) => {
+                    toast({
+                        title: "Uh oh! Something went wrong.",
+                        description: "There was a problem sending your message. Please try again.",
+                        variant: "destructive",
+                    });
+                    console.error('EMAILJS FAILED...', error);
+                }
+            )
+            .finally(() => {
+                setIsLoading(false);
+            });
+    };
+
     return (
         <section id="contact" className="section bg-card/50">
             <div className="container mx-auto px-4 md:px-6 animate-fade-in-up">
@@ -41,11 +91,33 @@ const Contact = () => {
                     <div className="lg:col-span-3">
                         <Card className="bg-background/50">
                             <CardContent className="p-6">
-                                <form className="space-y-4">
-                                    <Input placeholder="Name" />
-                                    <Input type="email" placeholder="Email" />
-                                    <Textarea placeholder="Message" rows={5} />
-                                    <Button type="submit" className="w-full">Send Message</Button>
+                                <form ref={form} onSubmit={sendEmail} className="space-y-4">
+                                    <Input
+                                        placeholder="Name"
+                                        name="from_name"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                        disabled={isLoading}
+                                    />
+                                    <Input
+                                        type="email"
+                                        placeholder="Email"
+                                        name="from_email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        disabled={isLoading}
+                                    />
+                                    <Textarea
+                                        placeholder="Message"
+                                        rows={5}
+                                        name="message"
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
+                                        disabled={isLoading}
+                                    />
+                                    <Button type="submit" className="w-full" disabled={isLoading}>
+                                        {isLoading ? "Sending..." : "Send Message"}
+                                    </Button>
                                 </form>
                             </CardContent>
                         </Card>
