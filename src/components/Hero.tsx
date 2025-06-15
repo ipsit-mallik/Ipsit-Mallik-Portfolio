@@ -43,7 +43,7 @@ const Hero = () => {
           animationDelay: '0.3s'
         }}>
             <div className="relative">
-              <img src="https://i.postimg.cc/43TsnH0D/Profile-photo.jpg" alt="Ipsit Mallik" className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-glow-pulse" />
+              <img src="https://i.postimg.cc/43TsnH0D/Profile-photo.jpg" alt="Ipsit Mallik" className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-[0_0_80px_5px_rgba(255,255,255,0.12)]" />
             </div>
           </div>
         </div>

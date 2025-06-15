@@ -103,21 +103,12 @@ export default {
                     '50%': { backgroundPosition: '100% 50%' },
                     '100%': { backgroundPosition: '0% 50%' },
                 },
-                'glow-pulse': {
-                    '0%, 100%': {
-                        boxShadow: '0 0 50px -10px hsl(var(--primary) / 0.6)'
-                    },
-                    '50%': {
-                        boxShadow: '0 0 70px 0px hsl(var(--primary) / 0.8)'
-                    },
-                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
                 'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
                 'background-pan': 'background-pan 15s ease-in-out infinite',
-                'glow-pulse': 'glow-pulse 4s ease-in-out infinite',
 			}
 		}
 	},
