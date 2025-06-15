@@ -1,19 +1,17 @@
-
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Briefcase, GraduationCap } from "lucide-react";
-
-const SectionTitle = ({ children }: { children: React.ReactNode }) => (
-  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 mb-8 text-center">{children}</h2>
-);
-
+const SectionTitle = ({
+  children
+}: {
+  children: React.ReactNode;
+}) => <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 mb-8 text-center">{children}</h2>;
 const About = () => {
-  return (
-    <section id="about" className="section bg-card/50">
+  return <section id="about" className="section bg-card/50">
       <div className="container mx-auto px-4 md:px-6 animate-fade-in-up">
         <SectionTitle>About Me</SectionTitle>
         <div className="grid gap-12 lg:grid-cols-5">
             <div className="lg:col-span-3 space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                     I'm a passionate and driven backend developer with a strong foundation in computer science and a love for building robust, scalable systems. My journey into software engineering began with a curiosity for how things work, which quickly evolved into a dedicated pursuit of creating efficient and reliable backend solutions.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
@@ -23,7 +21,7 @@ const About = () => {
             <div className="lg:col-span-2 space-y-6">
                 <Card className="bg-background/50">
                     <CardHeader>
-                        <CardTitle className="flex items-center gap-3"><GraduationCap className="text-primary"/> Education</CardTitle>
+                        <CardTitle className="flex items-center gap-3"><GraduationCap className="text-primary" /> Education</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                         <div>
@@ -41,8 +39,6 @@ const About = () => {
             </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
