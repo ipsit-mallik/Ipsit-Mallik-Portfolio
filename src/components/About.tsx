@@ -14,7 +14,7 @@ const About = () => {
                 <p className="text-muted-foreground leading-relaxed text-justify">
                     I'm a passionate and driven backend developer with a strong foundation in computer science and a love for building robust, scalable systems. My journey into software engineering began with a curiosity for how things work, which quickly evolved into a dedicated pursuit of creating efficient and reliable backend solutions.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                     Problem-solving is at the heart of what I do. I thrive on dissecting complex challenges and architecting elegant solutions. I'm a quick learner, always eager to adapt to new technologies and methodologies. I believe in the power of collaboration and am always open to learning from my peers to grow as a developer and a team player. My goal is to contribute to meaningful projects that push the boundaries of technology.
                 </p>
             </div>
