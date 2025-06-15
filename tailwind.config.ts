@@ -103,12 +103,21 @@ export default {
                     '50%': { backgroundPosition: '100% 50%' },
                     '100%': { backgroundPosition: '0% 50%' },
                 },
+                'pulse-shadow': {
+                    '0%, 100%': {
+                        boxShadow: '0 0 80px 5px rgba(255, 255, 255, 0.12)'
+                    },
+                    '50%': {
+                        boxShadow: '0 0 100px 15px rgba(255, 255, 255, 0.2)'
+                    }
+                },
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
                 'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
                 'background-pan': 'background-pan 15s ease-in-out infinite',
+                'pulse-shadow': 'pulse-shadow 5s ease-in-out infinite',
 			}
 		}
 	},
