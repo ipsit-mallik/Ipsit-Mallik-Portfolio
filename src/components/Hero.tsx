@@ -48,7 +48,7 @@ const Hero = () => {
           <div className="flex justify-center lg:col-span-2 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                src="https://i.postimg.cc/43TsnH0D/Profile-photo.jpg"
                 alt="Ipsit Mallik"
                 className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-2xl shadow-primary/10 filter drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]"
               />
