@@ -8,7 +8,7 @@ const Hero = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/7LmGS8Tn/simple-blue-gray-blank-wallpaper-preview.jpg')"
+            backgroundImage: "linear-gradient(to right, hsl(var(--background)), hsl(var(--secondary)), hsl(var(--background)))"
           }}
         />
       </div>
