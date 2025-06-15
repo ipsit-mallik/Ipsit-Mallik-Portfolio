@@ -6,9 +6,10 @@ const Hero = () => {
       {/* Background */}
       <div aria-hidden="true" className="absolute inset-0 -z-10">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 animate-background-pan"
           style={{
-            backgroundImage: "linear-gradient(to right, hsl(var(--background)), hsl(var(--secondary)), hsl(var(--background)))"
+            backgroundImage: "linear-gradient(to right, hsl(var(--background)), hsl(var(--secondary)), hsl(var(--background)))",
+            backgroundSize: "200% 200%",
           }}
         />
       </div>
