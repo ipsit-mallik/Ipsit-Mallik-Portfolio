@@ -16,13 +16,14 @@ const Contact = () => {
     const form = useRef<HTMLFormElement>(null);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
     const sendEmail = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        if (!name.trim() || !email.trim() || !message.trim()) {
+        if (!name.trim() || !email.trim() || !subject.trim() || !message.trim()) {
             toast({
                 title: "Incomplete Form",
                 description: "Please fill out all fields before sending.",
@@ -44,6 +45,7 @@ const Contact = () => {
                     });
                     setName('');
                     setEmail('');
+                    setSubject('');
                     setMessage('');
                 },
                 (error) => {
@@ -105,6 +107,13 @@ const Contact = () => {
                                         name="from_email"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
+                                        disabled={isLoading}
+                                    />
+                                    <Input
+                                        placeholder="Subject"
+                                        name="subject"
+                                        value={subject}
+                                        onChange={(e) => setSubject(e.target.value)}
                                         disabled={isLoading}
                                     />
                                     <Textarea
