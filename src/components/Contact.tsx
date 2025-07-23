@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin, Github } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
@@ -83,6 +83,10 @@ const Contact = () => {
                             <a href="https://linkedin.com/in/ipsit-mallik-b46390219" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
                                 <Linkedin className="text-primary"/>
                                 <span className="text-muted-foreground group-hover:text-primary transition-colors">LinkedIn Profile</span>
+                            </a>
+                            <a href="https://github.com/ipsitmallik" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
+                                <Github className="text-primary"/>
+                                <span className="text-muted-foreground group-hover:text-primary transition-colors">GitHub Profile</span>
                             </a>
                             <div className="flex items-center gap-3">
                                 <MapPin className="text-primary"/>
