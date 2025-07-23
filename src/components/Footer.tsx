@@ -14,12 +14,11 @@ const Footer = () => {
                     <Linkedin className="h-4 w-4" />
                 </Button>
             </a>
-            {/* Add GitHub link when available */}
-            {/* <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ipsitmallik" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="icon">
                     <Github className="h-4 w-4" />
                 </Button>
-            </a> */}
+            </a>
         </div>
       </div>
     </footer>
