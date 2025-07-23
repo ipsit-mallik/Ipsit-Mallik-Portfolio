@@ -15,7 +15,7 @@ const Footer = () => {
               <Linkedin className="h-5 w-5" />
             </Button>
           </a>
-          <a href="https://github.com/ipsitmallik" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ipsit-mallik" target="_blank" rel="noopener noreferrer">
             <Button variant="ghost" size="icon" className="h-12 w-12 hover:bg-primary/10 hover:text-primary border border-border hover:border-primary/20 transition-all duration-200">
               <Github className="h-5 w-5" />
             </Button>
